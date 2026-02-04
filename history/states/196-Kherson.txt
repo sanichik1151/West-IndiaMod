@@ -11,8 +11,8 @@ state = {
 
 	history = {
 
-		owner = NON # SOV
-		add_core_of = SOV
+		owner = STR # SOV
+		add_core_of = STR
 		add_core_of = UKR
 		add_core_of = CRI
 

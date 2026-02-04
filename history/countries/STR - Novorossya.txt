@@ -11,21 +11,29 @@ set_convoys = 0
 
 add_ideas = {
     #laws
-    
-    #other ideas
 
+    temp_var:STR_Sotark
+    temp_var:STR_Oplot
+    temp_var:STR_Makswell
+    temp_var:STR_Barmaley
+
+    #other ideas
+    STR_devastated_front
+    STR_revolution
+    STR_Russophile_heroes
+    STR_wealth_novorossiya
 }
 
-set_technology = { 
-	infantry_weapons = 1
-	infantry_weapons1 = 1
-	tech_support = 1		
-	tech_engineers = 1
-	tech_trucks = 1
-	motorised_infantry = 1
-	fuel_silos = 1
-	basic_train = 1
-	tech_mountaineers = 1
+set_technology = {
+    infantry_weapons = 1
+    infantry_weapons1 = 1
+    tech_support = 1
+    tech_engineers = 1
+    tech_trucks = 1
+    motorised_infantry = 1
+    fuel_silos = 1
+    basic_train = 1
+    tech_mountaineers = 1
 }
 
 set_popularities = {
@@ -47,5 +55,7 @@ set_politics = {
     elections_allowed = yes
 }
 
-# recruit_character = MAY_Parlament
-
+recruit_character = STR_Sotark
+recruit_character = STR_Oplot
+recruit_character = STR_Makswell
+recruit_character = STR_Barmaley

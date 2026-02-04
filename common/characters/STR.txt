@@ -1,0 +1,89 @@
+characters = {
+
+    # рада
+    STR_Trydovya_Rada = {
+        name = STR_Trydovya_Rada
+        portraits = {
+            civilian = {
+                large = GFX_portrait_STR_Trydovya_Rada
+            }
+        }
+        country_leader = {
+            ideology = ukrainian_strasserism
+            expire = "1965.1.1.1"
+            id = -1
+            traits = {
+            }
+        }
+    }
+
+    # Советники
+
+    STR_Sotark = {
+        name = STR_Sotark
+        portraits = {
+            civilian = {
+                large = GFX_portrait_STR_Sotark
+                small = GFX_portrait_STR_Sotark_small
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = STR_Sotark
+            ledger = civilian
+            can_be_fired = no
+            traits = { field_commander chairman_rada }      # Unspecified cost defaults to 150.
+        }
+    }
+
+    STR_Oplot = {
+        name = STR_Oplot
+        portraits = {
+            civilian = {
+                large = GFX_portrait_STR_Oplot
+                small = GFX_portrait_STR_Oplot_small
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = STR_Oplot
+            ledger = civilian
+            can_be_fired = no
+            traits = { nationalist }      # Unspecified cost defaults to 150.
+        }
+    }
+
+    STR_Makswell = {
+        name = STR_Makswell
+        portraits = {
+            civilian = {
+                large = GFX_portrait_STR_Makswell
+                small = GFX_portrait_STR_Makswell_small
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = STR_Makswell
+            ledger = civilian
+            can_be_fired = no
+            traits = { neonatzist }      # Unspecified cost defaults to 150.
+        }
+    }
+
+    STR_Barmaley = {
+        name = STR_Barmaley
+        portraits = {
+            civilian = {
+                large = GFX_portrait_STR_Barmaley
+                small = GFX_portrait_STR_Barmaley_small
+            }
+        }
+        advisor = {
+            slot = army_chief
+            idea_token = STR_Barmaley
+            ledger = army
+            can_be_fired = no
+            traits = { commissioner }      # Unspecified cost defaults to 150.
+        }
+    }
+}

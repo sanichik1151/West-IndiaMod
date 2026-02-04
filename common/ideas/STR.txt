@@ -1,21 +1,88 @@
 ideas = {
-	country = {
-		
-		STR_idea = {
+    country = {
 
-			allowed = {
-				always = no
-				tag = STR
-			}
 
-			allowed_civil_war = {
-				always = yes
-			}
+        STR_devastated_front = {
 
-			removal_cost = -1
-			picture = GFX_
-			modifier = {
-			}
-		}
+            allowed = {
+                always = no
+                tag = STR
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+            picture = GFX_
+            modifier = {
+                
+            }
+        }
+
+        STR_revolution = {
+
+            allowed = {
+                always = no
+                tag = STR
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+            picture = GFX_
+            modifier = {
+                war_support_factor = 0.15
+                drift_defence_factor = 0.25
+                resistance_target = 0.5
+                political_power_factor = 0.25
+            }
+        }
+
+        STR_Russophile_heroes = { # bradar, what is this
+
+            allowed = {
+                always = no
+                tag = STR
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+            picture = GFX_
+            modifier = {
+                army_attack_factor = -0.1
+                army_org_factor = -0.08
+                planning_speed = -0.25
+                max_planning_factor = -0.1
+            }
+        }
+
+        STR_wealth_novorossiya = {
+
+            allowed = {
+                always = no
+                tag = STR
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+            picture = GFX_
+            modifier = {
+                consumer_goods_factor = -0.2
+                supply_consumption_factor = -0.15
+                production_factory_efficiency_gain_factor = 0.08
+                line_change_production_efficiency_factor = 0.08
+                production_factory_max_efficiency_factor = 0.08
+                supply_node_range = 0.1
+            }
+        }
     }
 }
