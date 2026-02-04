@@ -1,0 +1,65 @@
+capital = 271
+
+# oob = KZV_1936
+
+set_research_slots = 3
+set_stability = 0
+set_war_support = 0
+add_political_power = 0
+set_convoys = 0
+
+
+add_ideas = {
+    #laws
+
+    #other ideas
+    KIZ_government_paranoia
+    KIZ_stronghold_zionism
+    KIZ_alliance_jews_arabs
+    KIZ_jewish_business
+    KIZ_islamic_militants
+    KIZ_kurdish_uprising
+}
+
+set_technology = {
+    infantry_weapons = 1
+    infantry_weapons1 = 1
+    tech_support = 1
+    tech_engineers = 1
+    tech_trucks = 1
+    motorised_infantry = 1
+    fuel_silos = 1
+    basic_train = 1
+    tech_mountaineers = 1
+}
+
+set_popularities = {
+    communism = 0
+    fascism = 0
+    neutrality = 0
+    zionism = 100
+    liberalism_ideology = 0
+    corporatocracy = 0
+    velianism = 0
+    islamic_revival = 0
+    militarism = 0
+}
+set_politics = {
+    ruling_party = zionism
+    last_election = "1935.1.10"
+    election_frequency = 48
+    elections_allowed = no
+}
+
+set_party_name = {
+    ideology = assadi_zionism
+    long_name = KIZ_assadi_zionism_long
+    name = KIZ_assadi_zionism_short
+}
+
+recruit_character = KIZ_Kaiser
+recruit_character = KIZ_Basar_Assad
+recruit_character = KIZ_Netanyahu
+recruit_character = KIZ_Negev
+recruit_character = KIZ_Katz
+

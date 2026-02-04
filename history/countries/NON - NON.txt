@@ -1,0 +1,33 @@
+capital = 271
+
+oob = NON_1936
+
+set_research_slots = 0
+set_stability = 0
+set_war_support = 0
+add_political_power = 0
+set_convoys = 0
+
+
+add_ideas = {
+    #laws
+    NON_void
+    #other ideas
+}
+
+set_technology = {
+}
+
+set_popularities = {
+    democratic = 0
+    communism = 100
+    fascism = 0
+    neutrality = 0
+}
+set_politics = {
+    ruling_party = communism
+    last_election = "1935.1.10"
+    election_frequency = 48
+    elections_allowed = no
+}
+

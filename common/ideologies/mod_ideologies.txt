@@ -1,0 +1,564 @@
+
+ideologies = {
+    ### National Socialism refers to the ideologies that either are Nazism or are directly inspired by Nazism. This means ideologies that adhere to totalitarian scientific racism with an emphasis on social-collectivist economics.
+
+
+    ### All quasi-fascist ultranationalist movements that are not quite yet Fascism, such as ultramilitaristic dictatorships, xenophobic conservatives, or pro-Fascist-yet-not-Fascist collaborator regimes.
+
+    zionism = {
+        types = {
+            assadi_zionism = {
+                can_be_randomly_selected = no
+                color = { 80 15 25 }
+            }
+        }
+        dynamic_faction_names = {}
+        color = { 16 48 102 }
+        rules = {
+            can_create_collaboration_government = yes
+            can_force_government = no
+            can_puppet = yes
+            can_join_factions = yes
+            can_send_volunteers = yes
+        }
+        modifiers = {
+            hidden_modifier = {
+            }
+        }
+        ai_fascist = yes
+        ai_ideology_wanted_units_factor = 1.45
+    }
+
+    liberalism_ideology = {
+        types = {
+            classical_liberalism = {
+                can_be_randomly_selected = no
+                color = { 0 0 80 }
+            }
+
+            economic_liberalism = {
+                can_be_randomly_selected = no
+                color = { 60 80 40 }
+            }
+
+            social_liberalism = {
+                can_be_randomly_selected = no
+                color = { 70 120 180 }
+            }
+        }
+        dynamic_faction_names = {}
+        color = { 15 25 56 }
+        rules = {
+            can_create_collaboration_government = no
+            can_declare_war_on_same_ideology = no
+            can_force_government = yes
+            can_send_volunteers = no
+            can_puppet = no
+            can_lower_tension = yes
+            can_only_justify_war_on_threat_country = yes
+            can_guarantee_other_ideologies = yes
+        }
+        modifiers = {
+            hidden_modifier = {
+            }
+        }
+        ai_democratic = yes
+        ai_ideology_wanted_units_factor = 1.50
+    }
+
+    libertarianism_ideology = {
+        types = {
+            libertarianism = {
+                can_be_randomly_selected = no
+                color = { 160 140 50 }
+            }
+        }
+        dynamic_faction_names = {}
+        color = { 160 140 50 }
+        rules = {
+            can_create_collaboration_government = no
+            can_declare_war_on_same_ideology = no
+            can_force_government = yes
+            can_send_volunteers = no
+            can_puppet = no
+            can_lower_tension = yes
+            can_only_justify_war_on_threat_country = yes
+            can_guarantee_other_ideologies = yes
+        }
+        modifiers = {
+            hidden_modifier = {
+            }
+        }
+        ai_democratic = yes
+        ai_ideology_wanted_units_factor = 1.50
+    }
+
+    nationalism_ideology = {
+        types = {
+
+            ultranationalism = {
+                can_be_randomly_selected = no
+                color = { 80 0 10 }
+            }
+
+            radical_ethnic_nationalism = {
+                can_be_randomly_selected = no
+                color = { 139 0 0 }
+            }
+        }
+        dynamic_faction_names = {
+        }
+        color = { 150 40 45 }  # Основной цвет национализма
+        rules = {
+            can_create_collaboration_government = yes
+            can_declare_war_on_same_ideology = no
+            can_force_government = yes
+            can_send_volunteers = yes
+            can_puppet = yes
+            can_lower_tension = no
+            can_only_justify_war_on_threat_country = no
+        }
+        modifiers = {
+        }
+        ai_fascist = yes
+        ai_ideology_wanted_units_factor = 1.60
+    }
+
+    islamic_revival = {
+        types = {
+            islamic_fundamentalism = {
+                can_be_randomly_selected = no
+                color = { 55 35 25 }
+            }
+        }
+        dynamic_faction_names = {
+        }
+        color = { 2 10 0 }
+
+        rules = {
+            can_create_collaboration_government = no
+            can_declare_war_on_same_ideology = yes
+            can_force_government = yes
+            can_send_volunteers = yes
+            can_puppet = no
+            can_lower_tension = no
+            can_only_justify_war_on_threat_country = no
+            can_guarantee_other_ideologies = no
+        }
+
+        modifiers = {
+            hidden_modifier = {
+            }
+        }
+        ai_fascist = yes
+        ai_ideology_wanted_units_factor = 2
+    }
+
+    marxism_ideology = {
+        types = {
+            neomarxism = {
+                can_be_randomly_selected = no
+                color = { 110 20 40 }  # тёмный пурпурно-красный
+            }
+        }
+        dynamic_faction_names = {
+        }
+        color = { 100 20 50 }  #тёмный красно-фиолетовый
+        rules = {
+            can_create_collaboration_government = yes
+            can_declare_war_on_same_ideology = no
+            can_force_government = no
+            can_send_volunteers = yes
+            can_puppet = no
+            can_lower_tension = yes
+            can_only_justify_war_on_threat_country = no
+            can_guarantee_other_ideologies = only_critical_ideologies
+            can_justify_war_goal_on_cultural_claims = yes
+            can_use_ideological_crusade = yes
+        }
+        modifiers = {
+            stability_factor = -0.05
+        }
+        ai_communist = yes
+        ai_ideology_wanted_units_factor = 0.90
+    }
+
+    socialism_ideology = {
+        types = {
+            ukrainian_strasserism = {
+                can_be_randomly_selected = no
+                color = { 101 0 11 }
+            }
+        }
+        dynamic_faction_names = {
+        }
+        color = { 78 0 22 }  # хз какой цвет
+        rules = {
+            can_create_collaboration_government = yes
+            can_declare_war_on_same_ideology = no
+            can_force_government = no
+            can_send_volunteers = yes
+            can_puppet = no
+            can_lower_tension = yes
+            can_only_justify_war_on_threat_country = no
+            can_guarantee_other_ideologies = only_critical_ideologies
+            can_justify_war_goal_on_cultural_claims = yes
+            can_use_ideological_crusade = yes
+        }
+        modifiers = {
+        }
+        ai_communist = yes
+        ai_ideology_priority = intellectual_struggle
+        ai_ideology_wanted_units_factor = 0.90
+    }
+
+    militarism = {
+        types = {
+            militarism_ideology = {}
+        }
+        dynamic_faction_names = {}
+        color = { 139 0 0 }  # Темно-красный цвет
+
+        rules = {
+            can_create_collaboration_government = no
+            can_declare_war_on_same_ideology = yes
+            can_force_government = yes
+            can_send_volunteers = yes
+            can_puppet = yes
+            can_lower_tension = no
+            can_only_justify_war_on_threat_country = no
+            can_guarantee_other_ideologies = no
+        }
+
+        modifiers = {
+            hidden_modifier = {
+            }
+        }
+        ai_fascist = yes
+        ai_ideology_wanted_units_factor = 1.65
+    }
+
+    corporatocracy = {
+        types = {
+            corporatocracy_ideology = {}
+        }
+        dynamic_faction_names = {
+        }
+        color = { 160 32 240 }  # Пурпурный - цвет корпоративной власти
+
+        rules = {
+            can_create_collaboration_government = yes  # Могут создавать марионеточные правительства
+            can_declare_war_on_same_ideology = no
+            can_force_government = yes  # Могут навязывать корпоративное правление
+            can_send_volunteers = yes  # Могут отправлять "частные военные компании"
+            can_puppet = yes  # Могут создавать корпоративные марионетки
+            can_lower_tension = no
+            can_only_justify_war_on_threat_country = no  # Могут воевать за ресурсы и рынки
+            can_guarantee_other_ideologies = no
+            can_create_factions = yes
+            can_join_factions = yes
+        }
+
+        modifiers = {
+            hidden_modifier = {
+            }
+        }
+        ai_democratic = yes
+        ai_ideology_wanted_units_factor = 1.10
+    }
+
+    velianism = {
+        types = {
+            velianism_ideology = {}
+        }
+        dynamic_faction_names = {
+        }
+        color = { 255 140 0 }  # Темно-оранжевый/янтарный
+
+        rules = {
+            can_create_collaboration_government = no
+            can_declare_war_on_same_ideology = no
+            can_force_government = yes  # Могут навязывать свою идеологию
+            can_send_volunteers = yes
+            can_puppet = yes
+            can_lower_tension = yes
+            can_only_justify_war_on_threat_country = no
+            can_guarantee_other_ideologies = yes
+        }
+
+        modifiers = {
+            hidden_modifier = {
+            }
+        }
+        ai_democratic = yes
+        ai_ideology_wanted_units_factor = 1.10
+    }
+
+    #democratic = { # Основная идеологическая группа "Демократия"
+
+    #types = { # Подтипы идеологий внутри группы
+
+    #conservatism = { # Консерватизм (нет особых свойств)
+    #}
+
+    #liberalism = { # Либерализм (нет особых свойств)
+    #}
+
+    #socialism = { # Социализм (нет особых свойств)
+    #}
+
+    #populism = { # Популизм (нет особых свойств)
+    #}
+
+    #}
+
+    #dynamic_faction_names = { # Динамические названия фракций для этой идеологии
+    #"FACTION_NAME_DEMOCRATIC_1"
+    #"FACTION_NAME_DEMOCRATIC_2"
+    #"FACTION_NAME_DEMOCRATIC_3"
+    #"FACTION_NAME_DEMOCRATIC_4"
+    #"FACTION_NAME_DEMOCRATIC_5"
+    #"FACTION_NAME_DEMOCRATIC_6"
+    #}
+
+    #color = { 0 0 255 } # Цвет в RGB (синий)
+
+    #rules = { # Правила поведения для этой идеологии
+    #can_create_collaboration_government = no # Не может создавать коллаборационные правительства
+    #can_declare_war_on_same_ideology = no # Не может объявлять войну странам с такой же идеологией
+    #can_force_government = yes # Может навязывать правительство другим странам
+    #can_send_volunteers = no # Не может отправлять добровольцев
+    #can_puppet = no # Не может создавать марионеточные государства
+    #can_lower_tension = yes # Может снижать мировое напряжение
+    #can_only_justify_war_on_threat_country = yes # Может обосновывать войну только против угрожающих стран
+    #can_guarantee_other_ideologies = yes # Может гарантировать независимость других идеологий
+    #}
+
+    #can_host_government_in_exile = yes # Может принимать правительства в изгнании
+
+    #war_impact_on_world_tension = 0.25		# Влияние войны на мировое напряжение (25%)
+    #faction_impact_on_world_tension = 0.1 # Влияние фракции на мировое напряжение (10%)
+
+    #modifiers = { # Модификаторы для стран с этой идеологией
+    #generate_wargoal_tension = 1.00 # Напряжение от создания CB
+    #join_faction_tension = 0.80 # Напряжение от вступления во фракцию
+    #lend_lease_tension = 0.50 # Напряжение от ленд-лиза
+    #send_volunteers_tension = 0.50 # Напряжение от отправки добровольцев
+    #guarantee_tension = 0.25 # Напряжение от гарантий
+    ## annex_cost_factor = 0.5 # Устарело, используйте common\peace_conference\00_generic_peace.txt
+    #civilian_intel_to_others = 20.0 # Гражданская разведка для других
+    #army_intel_to_others = 5.0 # Армейская разведка для других
+    #navy_intel_to_others = 20.0 # Военно-морская разведка для других
+    #airforce_intel_to_others = 5 # Воздушная разведка для других
+    #embargo_cost_factor = -0.5 # Модификатор стоимости эмбарго
+    #embargo_threshold_factor = -0.5 # Модификатор порога эмбарго
+    #}
+
+    #faction_modifiers = { # Модификаторы для фракций этой идеологии
+    #faction_trade_opinion_factor = 0.50 # Фактор торгового мнения во фракции (+50%)
+    #}
+    #ai_democratic = yes # Использует демократическое ИИ-поведение
+    #ai_ideology_wanted_units_factor = 1.10 # Множитель желаемых юнитов ИИ
+    #ai_give_core_state_control_threshold = 0 # Порог для возврата контроля над кор-провинциями
+    #}
+
+
+    #communism = { # Основная идеологическая группа "Коммунизм"
+
+    #types = { # Подтипы идеологий внутри группы
+
+    #marxism = { # Марксизм (нет особых свойств)
+    #}
+
+    #leninism = { # Ленинизм (нет особых свойств)
+    #}
+
+    #stalinism = { # Сталинизм (нет особых свойств)
+    #}
+
+    #anti_revisionism = { # Антиревизионизм (нет особых свойств)
+    #}
+
+    #anarchist_communism = { # Анархо-коммунизм (нет особых свойств)
+    #}
+
+    #buddhist_socialism = { # Буддийский социализм
+    #can_be_randomly_selected = no # Не может быть случайно выбран
+    #}
+
+    #}
+
+    #dynamic_faction_names = { # Динамические названия фракций
+    #"FACTION_NAME_COMMUNIST_1"
+    #"FACTION_NAME_COMMUNIST_2"
+    #"FACTION_NAME_COMMUNIST_3"
+    #"FACTION_NAME_COMMUNIST_4"
+    #"FACTION_NAME_COMMUNIST_5"
+    #}
+
+    #color = { 255 0 0 } # Цвет в RGB (красный)
+
+    #war_impact_on_world_tension = 0.75		# Влияние войны на напряжение (75%)
+    #faction_impact_on_world_tension = 0.5 # Влияние фракции на напряжение (50%)
+
+    #ai_communist = yes # Использует коммунистическое ИИ-поведение
+    #ai_ideology_wanted_units_factor = 1.20 # Множитель желаемых юнитов ИИ
+
+    #rules = { # Правила поведения
+    #can_force_government = yes # Может навязывать правительство
+    #can_send_volunteers = yes # Может отправлять добровольцев
+    #can_puppet = yes # Может создавать марионеточные государства
+    #}
+
+    #can_collaborate = yes # Может сотрудничать (создавать коллаборационные правительства)
+
+    #modifiers = { # Модификаторы
+    ## puppet_cost_factor = -0.3 # Устарело
+    #civilian_intel_to_others = 10.0 # Гражданская разведка
+    #army_intel_to_others = 7.5 # Армейская разведка
+    #navy_intel_to_others = 12.5 # Военно-морская разведка
+    #airforce_intel_to_others = 7.5 # Воздушная разведка
+    #hidden_modifier = { join_faction_tension = -0.1 } # Скрытый модификатор
+    #embargo_threshold_factor = 0.5 # Порог эмбарго
+    #lend_lease_tension = 0.50 # Напряжение от ленд-лиза
+    #}
+
+    #faction_modifiers = { # Модификаторы фракций
+    #(пусто)
+    #}
+
+    #ai_give_core_state_control_threshold = 10 # Порог возврата контроля над кор-провинциями
+    #}
+
+    #fascism = { # Основная идеологическая группа "Фашизм"
+
+    #types = { # Подтипы идеологий
+
+    #nazism = { # Нацизм (нет особых свойств)
+    #}
+
+    #gen_nazism = { # Генерализованный нацизм (нет особых свойств)
+    #}
+
+    #fascism_ideology = { # Фашистская идеология (нет особых свойств)
+    #}
+
+    #falangism = { # Фалангизм (нет особых свойств)
+    #}
+
+    #rexism = { # Рексизм (нет особых свойств)
+    #}
+
+    #emperor_fascism = { # Императорский фашизм
+    #can_be_randomly_selected = no # Не может быть случайно выбран
+    #}
+
+    #}
+
+    #dynamic_faction_names = { # Динамические названия фракций
+    #"FACTION_NAME_FASCIST_1"
+    #"FACTION_NAME_FASCIST_2"
+    #"FACTION_NAME_FASCIST_3"
+    #"FACTION_NAME_FASCIST_4"
+    #"FACTION_NAME_FASCIST_5"
+    #}
+
+    #color = { 150 75 0 } # Цвет в RGB (коричневый)
+
+    #war_impact_on_world_tension = 1.0			# Влияние войны на напряжение (100%)
+    #faction_impact_on_world_tension = 1.0 # Влияние фракции на напряжение (100%)
+
+    #rules = { # Правила поведения
+    #can_force_government = yes # Может навязывать правительство
+    #can_send_volunteers = yes # Может отправлять добровольцев
+    #can_puppet = yes # Может создавать марионеточные государства
+    #}
+
+    #can_collaborate = yes # Может сотрудничать
+
+    #modifiers = { # Модификаторы
+    #justify_war_goal_when_in_major_war_time = -0.80 # Время обоснования CB в большой войне
+    #civilian_intel_to_others = 15.0 # Гражданская разведка
+    #army_intel_to_others = 10.0 # Армейская разведка
+    #navy_intel_to_others = 10.0 # Военно-морская разведка
+    #airforce_intel_to_others = 10.0 # Воздушная разведка
+    #hidden_modifier = { join_faction_tension = -0.1 } # Скрытый модификатор
+    #embargo_cost_factor = 1 # Модификатор стоимости эмбарго
+    #lend_lease_tension = 0.50 # Напряжение от ленд-лиза
+    #}
+
+    #ai_fascist = yes # Использует фашистское ИИ-поведение
+    #ai_ideology_wanted_units_factor = 1.65 # Множитель желаемых юнитов ИИ
+
+    #ai_give_core_state_control_threshold = 10000 # Порог возврата контроля (очень высокий)
+    #}
+
+    #neutrality = { # Основная идеологическая группа "Нейтральные"
+
+    #types = { # Подтипы идеологий
+
+    #despotism  = { # Деспотизм (нет особых свойств)
+    #}
+
+    #oligarchism  = { # Олигархизм (нет особых свойств)
+    #}
+
+    #anarchism = { # Анархизм
+    #can_be_randomly_selected = no # Не может быть случайно выбран
+    #}
+
+    #moderatism = { # Модернизм (нет особых свойств)
+    #}
+
+    #centrism = { # Центризм (нет особых свойств)
+    #}
+
+    #japan_militarism_ideology = { # Японский милитаризм
+    #can_be_randomly_selected = no # Не может быть случайно выбран
+    #}
+
+    #}
+
+    #dynamic_faction_names = { # Динамические названия фракций
+    #"FACTION_NAME_NONALIGNED_1"
+    #"FACTION_NAME_NONALIGNED_2"
+    #"FACTION_NAME_NONALIGNED_3"
+    #"FACTION_NAME_NONALIGNED_4"
+    #"FACTION_NAME_NONALIGNED_5"
+    #}
+
+    #color = { 124 124 124 } # Цвет в RGB (серый)
+
+    #war_impact_on_world_tension = 0.25		# Влияние войны на напряжение (25%)
+    #faction_impact_on_world_tension = 0.1 # Влияние фракции на напряжение (10%)
+
+    #rules = { # Правила поведения
+    #can_force_government = yes # Может навязывать правительство
+    #can_puppet = yes # Может создавать марионеточные государства
+    #can_send_volunteers = no # Не может отправлять добровольцев
+    #}
+
+    #modifiers = { # Модификаторы
+    ##increased_influence_factor = 0.3 # Устарело
+    #generate_wargoal_tension = 0.5 # Напряжение от создания CB
+    #join_faction_tension = 0.4 # Напряжение от вступления во фракцию
+    #lend_lease_tension = 0.6 # Напряжение от ленд-лиза
+    #send_volunteers_tension = 0.4 # Напряжение от отправки добровольцев
+    #guarantee_tension = 0.4 # Напряжение от гарантий
+    #drift_defence_factor = -0.3 # Фактор защиты от идеологического дрейфа
+    #civilian_intel_to_others = 20.0 # Гражданская разведка
+    #army_intel_to_others = 10.0 # Армейская разведка
+    #navy_intel_to_others = 20.0 # Военно-морская разведка
+    #airforce_intel_to_others = 10.0 # Воздушная разведка
+    #}
+
+    #faction_modifiers = { # Модификаторы фракций
+    #(пусто)
+    #}
+
+    #ai_neutral = yes # Использует нейтральное ИИ-поведение
+    #ai_ideology_wanted_units_factor = 1.15 # Множитель желаемых юнитов ИИ
+
+    #ai_give_core_state_control_threshold = 10000 # Порог возврата контроля (очень высокий)
+    #}
+}

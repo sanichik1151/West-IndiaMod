@@ -1,0 +1,80 @@
+ideas = {
+	country = {
+		
+		ITR_horrific_corruption = {
+
+			allowed = {
+				always = no
+				tag = ITR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = GFX_
+			modifier = {
+				stability_factor = -0.15
+				political_power_factor = -0.05
+			}
+		}
+
+		ITR_economic = {
+
+			allowed = {
+				always = no
+				tag = ITR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = GFX_
+			modifier = {
+				stability_factor = -0.08
+				production_speed_buildings_factor = 0.15
+			}
+		}
+
+		ITR_War_With_Mafia = {
+
+			allowed = {
+				always = no
+				tag = ITR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = GFX_
+			modifier = {
+				stability_factor = -0.08
+				political_power_factor = -0.05
+				war_support_factor = -0.10
+			}
+		}
+
+		ITR_northern_industry = {
+
+			allowed = {
+				always = no
+				tag = ITR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = GFX_
+			modifier = {
+				production_speed_buildings_factor = 0.15
+			}
+		}
+	}
+}

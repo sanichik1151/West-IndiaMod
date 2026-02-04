@@ -1,0 +1,66 @@
+spriteTypes = {
+	
+	# ИКОНКИ
+
+	# Девастатор
+	spriteType = {
+		name = "GFX_idea_DVT_hard_hand"
+		texturefile = "gfx/interface/ideas/DVT/DVT_hard_hand_idea.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_DVT_Government_Revenge"
+		texturefile = "gfx/interface/ideas/DVT/DVT_Government_Revenge_idea.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_DVT_Tough_Economy"
+		texturefile = "gfx/interface/ideas/DVT/DVT_Tough_Economy_icon.dds"
+	}
+
+	# Кайзер
+
+	spriteType = {
+		name = "GFX_idea_KIZ_jewish_business"
+		texturefile = "gfx/interface/ideas/KIZ/KIZ_jewish_business_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KIZ_stronghold_zionism"
+		texturefile = "gfx/interface/ideas/KIZ/KIZ_stronghold_zionism_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KIZ_alliance_jews_arabs"
+		texturefile = "gfx/interface/ideas/KIZ/KIZ_alliance_jews_arabs_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KIZ_islamic_militants"
+		texturefile = "gfx/interface/ideas/KIZ/KIZ_islamic_militants_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KIZ_kurdish_uprising"
+		texturefile = "gfx/interface/ideas/KIZ/KIZ_kurdish_uprising_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KIZ_government_paranoia"
+		texturefile = "gfx/interface/ideas/KIZ/KIZ_government_paranoia_icon.dds"
+	}
+	
+	# ПРАВИТЕЛИ
+
+	spriteType = {
+		name = "GFX_portrait_DVT_Devastator"
+		texturefile = "gfx/leaders/DVT/DVT_Devastator.dds"
+	}
+
+
+	# вайбкодинг
+	spriteType = {
+		name = "GFX_vibecoding"
+		texturefile = "gfx/interface/vibecoding.dds"
+	}
+}

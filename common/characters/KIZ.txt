@@ -1,0 +1,85 @@
+characters = {
+
+    # Кайзер
+    KIZ_Kaiser = {
+        name = KIZ_Kaiser
+        portraits = {
+            civilian = {
+                large = GFX_portrait_KIZ_Kaiser
+            }
+        }
+        country_leader = {
+            ideology = assadi_zionism
+            expire = "1965.1.1.1"
+            id = -1
+            traits = {
+            }
+        }
+    }
+
+    # Советники
+
+    KIZ_Basar_Assad = {
+        name = KIZ_Basar_Assad
+        portraits = {
+            civilian = {
+                large = GFX_portrait_KIZ_Basar_Assad
+                small = GFX_portrait_KIZ_Basar_Assad_small
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = KIZ_Basar_Assad
+            ledger = civilian
+            traits = { populist }      # Unspecified cost defaults to 150.
+        }
+    }
+
+    KIZ_Netanyahu = { # нетаньяху хуесос
+        name = KIZ_Netanyahu
+        portraits = {
+            civilian = {
+                large = GFX_portrait_KIZ_Netanyahu
+                small = GFX_portrait_KIZ_Netanyahu_small
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = KIZ_Netanyahu
+            ledger = civilian
+            traits = { radical_zionist }      # Unspecified cost defaults to 150.
+        }
+    }
+
+    KIZ_Negev = {
+        name = KIZ_Negev
+        portraits = {
+            civilian = {
+                large = GFX_portrait_KIZ_Negev
+                small = GFX_portrait_KIZ_Negev_small
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = KIZ_KIZ_Negev
+            ledger = civilian
+            traits = { people_favorite }      # Unspecified cost defaults to 150.
+        }
+    }
+
+    KIZ_Katz = {
+        name = KIZ_Katz
+        portraits = {
+            civilian = {
+                large = GFX_portrait_KIZ_Katz
+                small = GFX_portrait_KIZ_Katz_small
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = KIZ_Katz
+            ledger = civilian
+            traits = { ardent_propagandist }      # Unspecified cost defaults to 150.
+        }
+    }
+}

@@ -1,0 +1,21 @@
+ideas = {
+	country = {
+		
+		STR_idea = {
+
+			allowed = {
+				always = no
+				tag = STR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = GFX_
+			modifier = {
+			}
+		}
+    }
+}

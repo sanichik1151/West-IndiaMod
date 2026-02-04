@@ -1,0 +1,20 @@
+characters = {
+
+    # Парламент
+    LOF_Parlament = {
+        name = LOF_Parlament
+        portraits = {
+            civilian = {
+                large = GFX_portrait_LOF_Parlament
+            }
+        }
+        country_leader = {
+            ideology = managed_democracy
+            expire = "1965.1.1.1"
+            id = -1
+            traits = {
+            }
+        }
+    }
+
+}

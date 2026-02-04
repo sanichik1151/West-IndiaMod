@@ -1,0 +1,85 @@
+characters = {
+
+    # Парламент
+    MAY_Parlament = {
+        name = MAY_Parlament
+        portraits = {
+            civilian = {
+                large = GFX_portrait_MAY_Parlament
+            }
+        }
+        country_leader = {
+            ideology = classical_liberalism
+            expire = "1965.1.1.1"
+            id = -1
+            traits = {
+            }
+        }
+    }
+
+    # Советники
+
+    MAY_Murat_Kardanov = {
+        name = MAY_Murat_Kardanov
+        portraits = {
+            civilian = {
+                large = GFX_portrait_MAY_Murat_Kardanov
+                small = GFX_portrait_MAY_Murat_Kardanov_small
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = MAY_Murat_Kardanov
+            ledger = civilian
+            traits = { industrial_magnate }      # Unspecified cost defaults to 150.
+        }
+    }
+
+    MAY_Aminat_Bzhania = { 
+        name = MAY_Aminat_Bzhania
+        portraits = {
+            civilian = {
+                large = GFX_portrait_MAY_Aminat_Bzhania
+                small = GFX_portrait_MAY_Aminat_Bzhania_small
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = MAY_Aminat_Bzhania
+            ledger = civilian
+            traits = { master_diplomacy }      # Unspecified cost defaults to 150.
+        }
+    }
+
+    MAY_Rustam_Tlehas = {
+        name = MAY_Rustam_Tlehas
+        portraits = {
+            civilian = {
+                large = GFX_portrait_MAY_Rustam_Tlehas
+                small = GFX_portrait_MAY_Rustam_Tlehas_small
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = MAY_Rustam_Tlehas
+            ledger = civilian
+            traits = { scientist }      # Unspecified cost defaults to 150.
+        }
+    }
+
+    MAY_Aslan_Kataev = {
+        name = MAY_Aslan_Kataev
+        portraits = {
+            civilian = {
+                large = GFX_portrait_MAY_Aslan_Kataev
+                small = GFX_portrait_MAY_Aslan_Kataev_small
+            }
+        }
+        advisor = {
+            slot = army_chief
+            idea_token = MAY_Aslan_Kataev
+            ledger = army
+            traits = { military_reformer }      # Unspecified cost defaults to 150.
+        }
+    }
+}

@@ -1,0 +1,85 @@
+characters = {
+
+    # Артём
+    ITR_Artem = {
+        name = ITR_Artem
+        portraits = {
+            civilian = {
+                large = GFX_portrait_ITR_Artem
+            }
+        }
+        country_leader = {
+            ideology = economic_liberalism
+            expire = "1965.1.1.1"
+            id = -1
+            traits = {
+            }
+        }
+    }
+
+    # Советники
+
+    ITR_Milton_Friedman = {
+        name = ITR_Milton_Friedman
+        portraits = {
+            civilian = {
+                large = GFX_portrait_ITR_Milton_Friedman
+                small = GFX_portrait_ITR_Milton_Friedman_small
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = ITR_Milton_Friedman
+            ledger = civilian
+            traits = {  }      # Unspecified cost defaults to 150.
+        }
+    }
+
+    ITR_Axlebolt = {
+        name = ITR_Axlebolt
+        portraits = {
+            civilian = {
+                large = GFX_portrait_ITR_Axlebolt
+                small = GFX_portrait_ITR_Axlebolt_small
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = ITR_Axlebolt
+            ledger = civilian
+            traits = {  }      # Unspecified cost defaults to 150.
+        }
+    }
+
+    ITR_MROkak = {
+        name = ITR_MROkak
+        portraits = {
+            civilian = {
+                large = GFX_portrait_ITR_MROkak
+                small = GFX_portrait_ITR_MROkak_small
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = ITR_MROkak
+            ledger = civilian
+            traits = {  }      # Unspecified cost defaults to 150.
+        }
+    }
+
+    ITR_Pokoio = {
+        name = ITR_Pokoio
+        portraits = {
+            civilian = {
+                large = GFX_portrait_ITR_Pokoio
+                small = GFX_portrait_ITR_Pokoio_small
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = ITR_Pokoio
+            ledger = civilian
+            traits = {  }      # Unspecified cost defaults to 150.
+        }
+    }
+}
