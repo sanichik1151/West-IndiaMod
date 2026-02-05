@@ -1,26 +1,26 @@
 state = {
-	id = 1039
-	name = "STATE_1039" # South Chahar
-	manpower = 367500
-	
-	state_category = pastoral
+    id = 1039
+    name = "STATE_1039" # South Chahar
+    manpower = 367500
 
-	history = {
+    state_category = pastoral
 
-		owner = NON # CHI
-		add_core_of = MEN
-		add_core_of = CHI
-		add_core_of = PRC
-		
-		victory_points = {
-			6904 3 # Kalgan #was 4
-		}
+    history = {
 
-	}
+        owner = NON # CHI
+        add_core_of = MEN
 
-	provinces = {
-		1137 1590 6904 9776
-	}
 
-	local_supplies = 0.0 
+
+        victory_points = {
+            6904 3 # Kalgan #was 4
+        }
+
+    }
+
+    provinces = {
+        1137 1590 6904 9776
+    }
+
+    local_supplies = 0.0
 }

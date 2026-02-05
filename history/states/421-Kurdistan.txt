@@ -1,23 +1,23 @@
 
 state={
-	id=421
-	name="STATE_421"
-	manpower = 390139
-	
-	state_category = rural
+    id=421
+    name="STATE_421"
+    manpower = 390139
 
-	history={
-		owner = NON # PER
-		buildings = {
-			infrastructure = 1
-		}
-		add_core_of = PER
-		add_core_of = KUR
-	}
+    state_category = rural
 
-	provinces={
-		829 5050 10774 
-	}
+    history={
+        owner = NON # PER
+        buildings = {
+            infrastructure = 1
+        }
 
-	local_supplies=0.0 
+
+    }
+
+    provinces={
+        829 5050 10774
+    }
+
+    local_supplies=0.0
 }

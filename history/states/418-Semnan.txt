@@ -1,25 +1,25 @@
 
 state={
-	id=418
-	name="STATE_418"
-	manpower = 332362
-	
-	state_category = wasteland
+    id=418
+    name="STATE_418"
+    manpower = 332362
 
-	history={
-		owner = NON # PER
-		buildings = {
-			infrastructure = 1
-		}
-		victory_points = {
-			8093 1 
-		}
-		add_core_of = PER
-	}
+    state_category = wasteland
 
-	provinces={
-		8009 8093 10873 11671 12704 12748 12818 
-	}
+    history={
+        owner = NON # PER
+        buildings = {
+            infrastructure = 1
+        }
+        victory_points = {
+            8093 1
+        }
 
-	local_supplies=0.0 
+    }
+
+    provinces={
+        8009 8093 10873 11671 12704 12748 12818
+    }
+
+    local_supplies=0.0
 }

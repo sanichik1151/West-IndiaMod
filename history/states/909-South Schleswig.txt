@@ -1,30 +1,30 @@
 state = {
-	id = 909
-	name = "STATE_909"
-	manpower = 152520
-	state_category = rural
-	
-	history = {
+    id = 909
+    name = "STATE_909"
+    manpower = 152520
+    state_category = rural
 
-		owner = NON # GER
-		add_core_of = GER
-		add_core_of = SHL
-		add_core_of = PRE
+    history = {
 
-		victory_points = {
-			317 3  # Flensburg
-		}
+        owner = NON # GER
 
-		buildings = {
-			infrastructure = 3
-			arms_factory = 1
-		}
-		
-	}
+        add_core_of = SHL
+        add_core_of = PRE
 
-	provinces = {
-		317 3231 11366
- 	}
+        victory_points = {
+            317 3  # Flensburg
+        }
 
-	local_supplies = 0.0 
+        buildings = {
+            infrastructure = 3
+            arms_factory = 1
+        }
+
+    }
+
+    provinces = {
+        317 3231 11366
+    }
+
+    local_supplies = 0.0
 }

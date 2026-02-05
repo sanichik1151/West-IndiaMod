@@ -1,23 +1,23 @@
 state={
-	id=756
-	name="STATE_756"
-	provinces={
-		1778 2028 5076 7971 12596 12820 
-	}
-	manpower=550000
-	buildings_max_level_factor=1.000
-	state_category = wasteland
-	history={
+    id=756
+    name="STATE_756"
+    provinces={
+        1778 2028 5076 7971 12596 12820
+    }
+    manpower=550000
+    buildings_max_level_factor=1.000
+    state_category = wasteland
+    history={
 
-		owner = NON # XSM
-		add_core_of = XSM
-		add_core_of = CHI
-		add_core_of = PRC
+        owner = NON # XSM
 
-		victory_points = {
-			7971 1 # Jiuquan 
-		}
-	}
 
-	local_supplies = 0.0 
+
+
+        victory_points = {
+            7971 1 # Jiuquan
+        }
+    }
+
+    local_supplies = 0.0
 }

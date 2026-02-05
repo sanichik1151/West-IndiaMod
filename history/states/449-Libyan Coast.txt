@@ -1,22 +1,22 @@
 
 state={
-	id=449
-	name="STATE_449" # El Agheila
-	manpower = 40431
-	
-	state_category = wasteland
+    id=449
+    name="STATE_449" # El Agheila
+    manpower = 40431
 
-	history={
-		owner = NON # ITA
-		buildings = {
-			infrastructure = 2
-		}
-		add_core_of = LBA
-	}
+    state_category = wasteland
 
-	provinces={
-		1041 1198 4047 4057 10046 10117 12088 
-	}
+    history={
+        owner = NON # ITA
+        buildings = {
+            infrastructure = 2
+        }
 
-	local_supplies=0.0 
+    }
+
+    provinces={
+        1041 1198 4047 4057 10046 10117 12088
+    }
+
+    local_supplies=0.0
 }

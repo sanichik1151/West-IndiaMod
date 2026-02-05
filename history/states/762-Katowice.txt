@@ -1,38 +1,38 @@
 state = {
-	id = 762
-	name = "STATE_762"
-	
-	manpower = 1000000
+    id = 762
+    name = "STATE_762"
 
-	resources = {
-		steel = 19 # was: 60
-		aluminium = 7 # was: 20
-		coal = 32 # initial distribution
-	}
+    manpower = 1000000
 
-	state_category = city
+    resources = {
+        steel = 19 # was: 60
+        aluminium = 7 # was: 20
+        coal = 32 # initial distribution
+    }
 
-	history = {
-		
-		owner = NON # POL
-		add_core_of = POL
-		add_core_of = SIL
-		add_claim_by = PRE
+    state_category = city
 
-		victory_points = {
-			6464 5 # Katovice
-		}
+    history = {
 
-		buildings = {
-			infrastructure = 3 #was: 6
-			industrial_complex = 1
-		}
-		
-	}
+        owner = NON # POL
 
-	provinces = {
-		506 6464
-	}
+        add_core_of = SIL
+        add_claim_by = PRE
 
-	local_supplies = 0.0 
+        victory_points = {
+            6464 5 # Katovice
+        }
+
+        buildings = {
+            infrastructure = 3 #was: 6
+            industrial_complex = 1
+        }
+
+    }
+
+    provinces = {
+        506 6464
+    }
+
+    local_supplies = 0.0
 }

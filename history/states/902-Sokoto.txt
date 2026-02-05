@@ -1,29 +1,29 @@
 state = {
-	id = 902
-	name = "STATE_902"
-	manpower = 332479
-	state_category = pastoral
+    id = 902
+    name = "STATE_902"
+    manpower = 332479
+    state_category = pastoral
 
-	history = {
+    history = {
 
-		owner = NON # ENG
-		add_core_of = NGA
-		add_core_of = SOK
+        owner = NON # ENG
 
-		buildings = {
-			infrastructure = 1
-		}
 
-		victory_points = {
-			1891 1 # Sokoto
-		}
 
-	}
+        buildings = {
+            infrastructure = 1
+        }
 
-	provinces = {
-		1891 1932 1969 2025 4938 4972 8021 
-	}
-	
-	buildings_max_level_factor = 1.000
-	local_supplies = 0.000
+        victory_points = {
+            1891 1 # Sokoto
+        }
+
+    }
+
+    provinces = {
+        1891 1932 1969 2025 4938 4972 8021
+    }
+
+    buildings_max_level_factor = 1.000
+    local_supplies = 0.000
 }

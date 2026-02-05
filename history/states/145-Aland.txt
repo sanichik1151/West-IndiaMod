@@ -1,30 +1,30 @@
 state=
 {
-	id=145
-	name="STATE_145" #ÅLAND
-	manpower = 28139
-	
-	state_category = small_island
-	
-	history = {
-		owner = NON # FIN
-		
-		victory_points = { #Mariehman
-			9228 1
-		}
+    id=145
+    name="STATE_145" #ÅLAND
+    manpower = 28139
 
-		buildings = {
-			infrastructure = 2 #MM: Was 3
-			9228 = {
-				naval_base = 1
-			}
-		}
-		add_core_of = FIN
-	}
-	
-	provinces=	{
-		9228
-	}
+    state_category = small_island
 
-	local_supplies=0.0 
+    history = {
+        owner = NON # FIN
+
+        victory_points = { #Mariehman
+            9228 1
+        }
+
+        buildings = {
+            infrastructure = 2 #MM: Was 3
+            9228 = {
+                naval_base = 1
+            }
+        }
+
+    }
+
+    provinces=	{
+        9228
+    }
+
+    local_supplies=0.0
 }

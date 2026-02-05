@@ -1,38 +1,38 @@
 state = {
-	id = 975
-	name = "STATE_975"
-	manpower = 298000
+    id = 975
+    name = "STATE_975"
+    manpower = 298000
 
-	resources = {
-	}
-	
-	state_category = rural
-	
-	history = {
+    resources = {
+    }
 
-		owner = NON # AUS
-		add_core_of = AUS
+    state_category = rural
 
-		victory_points = {
-			3700 1 
-		}
+    history = {
 
-		buildings = {
-			infrastructure = 1
-			industrial_complex = 1
-		}
-		
-		1938.3.12 = {
-			owner = NON # GER
-			controller = GER
-			add_core_of = GER
-		}
+        owner = NON # AUS
 
-	}
 
-	provinces = {
-		3700 9661 11630
-	}
+        victory_points = {
+            3700 1
+        }
 
-	local_supplies = 0.0 
+        buildings = {
+            infrastructure = 1
+            industrial_complex = 1
+        }
+
+        1938.3.12 = {
+            owner = NON # GER
+            controller = GER
+
+        }
+
+    }
+
+    provinces = {
+        3700 9661 11630
+    }
+
+    local_supplies = 0.0
 }

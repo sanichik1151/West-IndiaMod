@@ -1,33 +1,33 @@
 state = {
-	id = 752
-	name = "STATE_752"
-	
-	manpower = 300000
-	buildings_max_level_factor = 1.000
-	state_category = pastoral
+    id = 752
+    name = "STATE_752"
 
-	history = {
-		owner = NON # CHI
-		add_core_of = CHI
-		add_core_of = PRC
+    manpower = 300000
+    buildings_max_level_factor = 1.000
+    state_category = pastoral
 
-		victory_points = {
-			4999 1 # Kangding 
-		}
+    history = {
+        owner = NON # CHI
 
-		victory_points = {
-			12724 1 # Ba'an 
-		}
 
-		buildings = {
-			infrastructure = 1
-		}
 
-	}
+        victory_points = {
+            4999 1 # Kangding
+        }
 
-	provinces = {
-		1918 1999 7988 8104 12724 12837 4999
-	}
-	local_supplies = 1.0 
+        victory_points = {
+            12724 1 # Ba'an
+        }
+
+        buildings = {
+            infrastructure = 1
+        }
+
+    }
+
+    provinces = {
+        1918 1999 7988 8104 12724 12837 4999
+    }
+    local_supplies = 1.0
 
 }

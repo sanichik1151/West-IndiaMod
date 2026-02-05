@@ -5,4 +5,4 @@ KIZ = "countries/kiz.txt" # кайзер
 MAY = "countries/may.txt" # мой самый любимый брадок - майдеск
 ITR = "countries/itr.txt" # артём
 LOF = "countries/LOF.txt" # натовец
-STR = "countries/str.txt" # натовец
+STR = "countries/str.txt" # сотарк

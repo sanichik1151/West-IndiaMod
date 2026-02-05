@@ -1,33 +1,33 @@
 state = {
-	id = 68
-	name = "STATE_68"
-	manpower = 1250840
-	resources = {
-		aluminium = 15 # was: 24
-	}
+    id = 68
+    name = "STATE_68"
+    manpower = 1250840
+    resources = {
+        aluminium = 15 # was: 24
+    }
 
-	state_category = city
+    state_category = city
 
-	history = {
+    history = {
 
-		owner = NON # GER
-		add_core_of = GER
-		add_core_of = PRE
+        owner = NON # GER
 
-		victory_points = {
-			3473 1 # Küstrin
-		}
-		
-		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
-		}
-		
-	}
+        add_core_of = PRE
 
-	provinces = {
-		444 537 3473 3572 6236 9387 11478 
-	}
+        victory_points = {
+            3473 1 # Küstrin
+        }
 
-	local_supplies = 0.0 
+        buildings = {
+            infrastructure = 3
+            industrial_complex = 1
+        }
+
+    }
+
+    provinces = {
+        444 537 3473 3572 6236 9387 11478
+    }
+
+    local_supplies = 0.0
 }

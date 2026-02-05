@@ -1,29 +1,29 @@
 state = {
-	id = 765
-	name = "STATE_765"
-	manpower = 51600
-	state_category = pastoral
+    id = 765
+    name = "STATE_765"
+    manpower = 51600
+    state_category = pastoral
 
-	history = {
-		
-		owner = NON # ENG
-		add_core_of = QAT
+    history = {
 
-		victory_points = {
-			8051 1 # Doha
-		}
+        owner = NON # ENG
 
-		buildings = {
-			infrastructure = 1
-			8051 = {
-				naval_base = 2
-			}
-		}
-	}
 
-	provinces = {
-		8051
-	}
+        victory_points = {
+            8051 1 # Doha
+        }
 
-	local_supplies = 0.0 
+        buildings = {
+            infrastructure = 1
+            8051 = {
+                naval_base = 2
+            }
+        }
+    }
+
+    provinces = {
+        8051
+    }
+
+    local_supplies = 0.0
 }

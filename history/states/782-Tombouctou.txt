@@ -1,26 +1,26 @@
 state = {
-	id = 782
-	name = "STATE_782" # Tombouctou
-	manpower = 79243
-	
-	state_category = wasteland
-	impassable = yes
-	force_link_ownership_to = 898 # Gao
+    id = 782
+    name = "STATE_782" # Tombouctou
+    manpower = 79243
 
-	history = {
+    state_category = wasteland
+    impassable = yes
+    force_link_ownership_to = 898 # Gao
 
-		owner = NON # FRA
-		add_core_of = MLI
+    history = {
 
-		buildings = {
-			infrastructure = 0
-		}
+        owner = NON # FRA
 
-	}
 
-	provinces = {
-		1115 2068 10725 10868
-	}
+        buildings = {
+            infrastructure = 0
+        }
 
-	local_supplies = 0.0 
+    }
+
+    provinces = {
+        1115 2068 10725 10868
+    }
+
+    local_supplies = 0.0
 }

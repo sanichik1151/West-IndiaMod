@@ -1,47 +1,47 @@
 state = {
-	id = 807
-	name = "STATE_807"
-	manpower = 713370
-	
-	state_category = city
+    id = 807
+    name = "STATE_807"
+    manpower = 713370
 
-	history = {
+    state_category = city
 
-		owner = NON # POL
-		add_core_of = POL
-		add_core_of = KSH
-		add_claim_by = PRE
+    history = {
 
-		victory_points = {
-			9263 5 # Gdynia
-		}
+        owner = NON # POL
 
-		victory_points = {
-			3295 5 # Torun
-		}
+        add_core_of = KSH
+        add_claim_by = PRE
 
-		victory_points = {
-			279 1 # Bydgoszcz
-		}
+        victory_points = {
+            9263 5 # Gdynia
+        }
 
-		buildings = {
-			infrastructure = 3 #was: 6
-			arms_factory = 2
-			industrial_complex = 1
-			air_base = 2
-			9263 = {
-				naval_base = 1
-			}
-		}
-		
-		1938.3.12 = {
-			add_claim_by = GER
-		}
-	}
+        victory_points = {
+            3295 5 # Torun
+        }
 
-	provinces = {
-		243 279 334 389 3295 3324 6347 9263
-	}
+        victory_points = {
+            279 1 # Bydgoszcz
+        }
 
-	local_supplies = 0.0 
+        buildings = {
+            infrastructure = 3 #was: 6
+            arms_factory = 2
+            industrial_complex = 1
+            air_base = 2
+            9263 = {
+                naval_base = 1
+            }
+        }
+
+        1938.3.12 = {
+            add_claim_by = GER
+        }
+    }
+
+    provinces = {
+        243 279 334 389 3295 3324 6347 9263
+    }
+
+    local_supplies = 0.0
 }

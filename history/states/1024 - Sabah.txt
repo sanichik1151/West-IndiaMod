@@ -1,61 +1,61 @@
 state = {
 
-	id = 1024
-	name = "STATE_1024"
+    id = 1024
+    name = "STATE_1024"
 
-	manpower = 329800
+    manpower = 329800
 
-	resources = {
-		rubber = 20
-	}
-	
-	state_category = rural
+    resources = {
+        rubber = 20
+    }
 
-	history = {
+    state_category = rural
 
-		owner = NON # MAL
-		add_core_of = MAL
-		add_core_of = SAB
+    history = {
 
-		victory_points = {
-			10199 2 # Sandakan
-		}
+        owner = NON # MAL
 
-		victory_points = {
-			12228 1 # Tawau
-		}
 
-		victory_points = {
-			4282 1 # Kudat
-		}
 
-		victory_points = {
-			10212 3 # Kota Kinabalu/Jesselton
-		}
+        victory_points = {
+            10199 2 # Sandakan
+        }
 
-		buildings = {
+        victory_points = {
+            12228 1 # Tawau
+        }
 
-			infrastructure = 2
+        victory_points = {
+            4282 1 # Kudat
+        }
 
-			12228 = {
-				naval_base = 1
-			}
+        victory_points = {
+            10212 3 # Kota Kinabalu/Jesselton
+        }
 
-			10199 = {
-				naval_base = 1
-			}
+        buildings = {
 
-			10212 = {
-				naval_base = 2
-			}
+            infrastructure = 2
 
-		}
-		
-	}
+            12228 = {
+                naval_base = 1
+            }
 
-	provinces = {
-		1306 1335 4282 4338 7358 10143 10212 10199 10240 12171 12186 12228 
-	}
+            10199 = {
+                naval_base = 1
+            }
 
-	local_supplies = 0.0 
+            10212 = {
+                naval_base = 2
+            }
+
+        }
+
+    }
+
+    provinces = {
+        1306 1335 4282 4338 7358 10143 10212 10199 10240 12171 12186 12228
+    }
+
+    local_supplies = 0.0
 }

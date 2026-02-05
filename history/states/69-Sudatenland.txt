@@ -1,69 +1,69 @@
 state = {
-	id = 69
-	name = "STATE_69"
-	manpower = 2476250 # was 2830000
-	
-	state_category = town
-	
-	resources = {
-		steel = 4 # was: 8
-	}
-	
-	history = {
+    id = 69
+    name = "STATE_69"
+    manpower = 2476250 # was 2830000
 
-		victory_points = {
-			3585 3
-		}
+    state_category = town
 
-		victory_points = {
-			11432 1
-		}
+    resources = {
+        steel = 4 # was: 8
+    }
 
-		victory_points = {
-			11401 3
-		}
+    history = {
 
-		owner = NON # CZE
-		add_core_of = CZE
+        victory_points = {
+            3585 3
+        }
 
-		buildings = {
+        victory_points = {
+            11432 1
+        }
 
-			infrastructure = 4
-			industrial_complex = 2
-			anti_air_building = 1
+        victory_points = {
+            11401 3
+        }
 
-			424 = {
-				bunker = 1
-			}
-			469 = {
-				bunker = 1
-			}
-			3585 = {
-				bunker = 1
-			}
-			6470 = {
-				bunker = 1
-			}
-			9555 = {
-				bunker = 1
-			}
-			11432 = {
-				bunker = 1
-			}
+        owner = NON # CZE
 
-		}
 
-		1938.9.30 = {
-			owner = NON # GER
-			controller = GER
-			add_core_of = GER
-		}
+        buildings = {
 
-	}
+            infrastructure = 4
+            industrial_complex = 2
+            anti_air_building = 1
 
-	provinces = {
-		424 469 3418 3585 6470 9555 11401 11414 11432 	
-	}
-	local_supplies = 0.0 
+            424 = {
+                bunker = 1
+            }
+            469 = {
+                bunker = 1
+            }
+            3585 = {
+                bunker = 1
+            }
+            6470 = {
+                bunker = 1
+            }
+            9555 = {
+                bunker = 1
+            }
+            11432 = {
+                bunker = 1
+            }
+
+        }
+
+        1938.9.30 = {
+            owner = NON # GER
+            controller = GER
+
+        }
+
+    }
+
+    provinces = {
+        424 469 3418 3585 6470 9555 11401 11414 11432
+    }
+    local_supplies = 0.0
 
 }
