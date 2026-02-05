@@ -1,0 +1,64 @@
+capital = 271
+
+# oob = MAY_1936
+
+set_research_slots = 3
+set_stability = 0.50
+set_war_support = 0.03
+add_political_power = 0
+set_convoys = 0
+
+
+add_ideas = {
+    #laws
+
+
+
+    #other ideas
+    AVS_rampant_pacifism
+    AVS_crisis
+    AVS_slavic_nationalism
+    AVS_right_rise
+    AVS_baction_christianity
+    AVS_junta
+    AVS_foggy_future
+    AVS_garden
+}
+
+set_technology = {
+    infantry_weapons = 1
+    infantry_weapons1 = 1
+    tech_support = 1
+    tech_engineers = 1
+    tech_trucks = 1
+    motorised_infantry = 1
+    fuel_silos = 1
+    basic_train = 1
+    tech_mountaineers = 1
+}
+
+set_popularities = {
+    communism = 10
+    fascism = 20
+    neutrality = 15
+    democratic = 10
+    zionism = 0
+    liberalism_ideology = 0
+    corporatocracy = 0
+    velianism = 0
+    islamic_revival = 5
+    militarism = 29
+    socialism_ideology = 35
+}
+set_politics = {
+    ruling_party = socialism_ideology
+    last_election = "1935.1.10"
+    election_frequency = 48
+    elections_allowed = yes
+}
+
+recruit_character = AVS_Austrolfo
+
+
+
+

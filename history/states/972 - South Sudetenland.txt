@@ -11,7 +11,7 @@ state = {
 
     history = {
 
-        owner = NON # CZE
+        owner = AVS # CZE
 
 
         victory_points = {
@@ -26,12 +26,6 @@ state = {
             5283 = {
                 bunker = 1
             }
-
-        }
-
-        1938.9.30 = {
-            owner = NON # GER
-            controller = GER
 
         }
 

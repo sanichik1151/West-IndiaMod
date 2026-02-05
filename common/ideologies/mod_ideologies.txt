@@ -172,9 +172,6 @@ ideologies = {
             can_puppet = no
             can_lower_tension = yes
             can_only_justify_war_on_threat_country = no
-            can_guarantee_other_ideologies = only_critical_ideologies
-            can_justify_war_goal_on_cultural_claims = yes
-            can_use_ideological_crusade = yes
         }
         modifiers = {
             stability_factor = -0.05
@@ -186,6 +183,11 @@ ideologies = {
     socialism_ideology = {
         types = {
             ukrainian_strasserism = {
+                can_be_randomly_selected = no
+                color = { 101 0 11 }
+            }
+
+            scandinavian_socialism = {
                 can_be_randomly_selected = no
                 color = { 101 0 11 }
             }
@@ -201,14 +203,10 @@ ideologies = {
             can_puppet = no
             can_lower_tension = yes
             can_only_justify_war_on_threat_country = no
-            can_guarantee_other_ideologies = only_critical_ideologies
-            can_justify_war_goal_on_cultural_claims = yes
-            can_use_ideological_crusade = yes
         }
         modifiers = {
         }
         ai_communist = yes
-        ai_ideology_priority = intellectual_struggle
         ai_ideology_wanted_units_factor = 0.90
     }
 

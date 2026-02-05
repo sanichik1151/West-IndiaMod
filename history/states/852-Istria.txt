@@ -11,7 +11,7 @@ state = {
     }
 
     history = {
-        owner = NON # ITA
+        owner = AVS # ITA
         victory_points = { #Fiume (Rijeka)
             11564 1
         }
@@ -24,7 +24,7 @@ state = {
         }
 
 
-        add_core_of = CRO
+        add_core_of = AVS
         add_core_of = LBV
 
         ### CHANGED TO A MROE ROBUST SYSTEM

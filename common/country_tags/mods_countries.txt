@@ -6,3 +6,4 @@ MAY = "countries/may.txt" # мой самый любимый брадок - ма
 ITR = "countries/itr.txt" # артём
 LOF = "countries/LOF.txt" # натовец
 STR = "countries/str.txt" # сотарк
+AVS = "countries/avs.txt" # австрольфо

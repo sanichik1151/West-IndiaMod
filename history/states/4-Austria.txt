@@ -11,7 +11,7 @@ state = {
 
     history = {
 
-        owner = NON # AUS
+        owner = AVS # AUS
 
 
         victory_points = {
@@ -34,18 +34,6 @@ state = {
                         has_dlc = "Gotterdammerung"
                     }
                 }
-            }
-        }
-
-        1938.3.12 = {
-            owner = NON # GER
-            controller = GER
-
-        }
-
-        1939.1.1 = {
-            buildings = {
-                anti_air_building = 5
             }
         }
 

@@ -5,18 +5,13 @@ state={
     manpower = 154354
     state_category = pastoral
     history={
-        owner = NON # AUS
+        owner = AVS # AUS
         buildings = {
             infrastructure = 2
             industrial_complex = 1
         }
 
         add_claim_by = SWI
-        1938.3.12 = {
-            owner = NON # GER
-            controller = GER
-
-        }
     }
     provinces={
         6678 6680
