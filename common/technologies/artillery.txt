@@ -9,10 +9,6 @@ technologies = {
 			artillery_equipment_1
 		}
 
-		armored_car = {
-			soft_attack = 0.1
-		}
-
 		path = {
 			leads_to_tech = interwar_artillery
 			research_cost_coeff = 1
@@ -83,7 +79,7 @@ technologies = {
 	interwar_artillery = {
 
 		artillery = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		artillery_brigade = {
 			soft_attack = 0.1
@@ -144,12 +140,6 @@ technologies = {
 				factor = 5
 				date > "1939.1.1"
 			}
-
-			# It is imperative to prepare military tech for the war with China
-			modifier = {
-				factor = 5
-				original_tag = JAP
-			}
 		}
 	}
 
@@ -157,10 +147,6 @@ technologies = {
 
 		enable_equipments = {
 			artillery_equipment_2
-		}
-
-		armored_car = {
-			soft_attack = 0.1
 		}
 
 		enable_equipment_modules = {
@@ -224,7 +210,7 @@ technologies = {
 	artillery2 = {
 
 		artillery = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		artillery_brigade = {
 			soft_attack = 0.1
@@ -285,7 +271,7 @@ technologies = {
 	artillery3 = {
 
 		artillery = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		artillery_brigade = {
 			soft_attack = 0.1
@@ -341,11 +327,6 @@ technologies = {
 		enable_equipments = {
 			artillery_equipment_3
 		}
-
-		armored_car = {
-			soft_attack = 0.1
-		}
-
 		enable_equipment_modules = {
 			tank_medium_cannon_2
 		}
@@ -394,7 +375,7 @@ technologies = {
 	artillery5 = {
 
 		artillery = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		artillery_brigade = {
 			soft_attack = 0.1
@@ -458,15 +439,13 @@ technologies = {
 
 		artillery_brigade = {
 			mountain = {
-				attack = 0.08
-				movement = 0.15 #If you change this - Change the custom tooltip too: mountain_guns_tt ROM_modern_at_guns_tech_tt
+				movement = 0.15 #If you change this - Change the custom tooltip too: RAJ_revive_the_screw_guns_effect ROM_modern_at_guns_tech_tt
 			}
 		}
 
 		anti_tank_brigade = {
 			mountain = {
-				attack = 0.08
-				movement = 0.15 #If you change this - Change the custom tooltip too: mountain_guns_tt ROM_modern_at_guns_tech_tt
+				movement = 0.15 #If you change this - Change the custom tooltip too: RAJ_revive_the_screw_guns_effect ROM_modern_at_guns_tech_tt
 			}
 		}
 	}
@@ -503,11 +482,6 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
-
-			modifier = {
-				factor = 2
-				tag = SOV
-			}
 		}
 
 		categories = {
@@ -519,7 +493,16 @@ technologies = {
 
 	rocket_artillery2 = {
 
-		category_rocket_artillery = {
+		rocket_artillery = {
+			soft_attack = 0.15
+		}
+		rocket_artillery_brigade = {
+			soft_attack = 0.15
+		}
+		mot_rocket_artillery_brigade = {
+			soft_attack = 0.15
+		}
+		motorized_rocket_brigade = {
 			soft_attack = 0.15
 		}
 
@@ -539,11 +522,6 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
-
-			modifier = {
-				factor = 2
-				tag = SOV
-			}
 		}
 
 		categories = {
@@ -555,10 +533,18 @@ technologies = {
 
 	rocket_artillery3 = {
 
-		category_rocket_artillery = {
+		rocket_artillery = {
 			soft_attack = 0.15
 		}
-
+		rocket_artillery_brigade = {
+			soft_attack = 0.15
+		}
+		mot_rocket_artillery_brigade = {
+			soft_attack = 0.15
+		}
+		motorized_rocket_brigade = {
+			soft_attack = 0.15
+		}
 
 		path = {
 			leads_to_tech = rocket_artillery4
@@ -576,11 +562,6 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
-
-			modifier = {
-				factor = 2
-				tag = SOV
-			}
 		}
 
 		categories = {
@@ -612,11 +593,6 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
-
-			modifier = {
-				factor = 2
-				tag = SOV
-			}
 		}
 
 		categories = {
@@ -630,10 +606,6 @@ technologies = {
 
 		enable_equipments = {
 			anti_air_equipment_1
-		}
-
-		armored_car = {
-			hard_attack = 0.1
 		}
 
 		enable_equipment_modules = {
@@ -666,19 +638,6 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 
-			modifier = {
-				factor = 0.5
-
-				OR = {
-					tag = CHI
-					tag = PRC
-					tag = XSM
-					tag = SIK
-					tag = GXC
-					tag = SHX
-					tag = YUN
-				}
-			}
 			modifier = {
 				factor = 2
 				date > "1937.1.1"
@@ -714,9 +673,7 @@ technologies = {
 		mot_anti_air_brigade = {
 			air_attack = 0.1
 		}
-		category_self_propelled_anti_air = {
-			air_attack = 0.15
-		}
+
 		tech_air_damage_factor = -0.02
 
 		path = {
@@ -735,19 +692,6 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				OR = {
-					tag = JAP
-					tag = ENG
-					tag = USA
-				}
-				OR = {
-					has_war_with = JAP
-					has_war_with = USA
-					has_war_with = ENG
-				}
-				factor = 5
-			}
 		}
 
 		categories = {
@@ -763,9 +707,7 @@ technologies = {
 		enable_equipments = {
 			anti_air_equipment_2
 		}
-		armored_car = {
-			hard_attack = 0.1
-		}
+
 		static_anti_air_damage_factor = 0.1
 
 		enable_equipment_modules = {
@@ -796,19 +738,6 @@ technologies = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				OR = {
-					tag = JAP
-					tag = ENG
-					tag = USA
-				}
-				OR = {
-					has_war_with = JAP
-					has_war_with = USA
-					has_war_with = ENG
-				}
-				factor = 5
-			}
 		}
 
 		categories = {
@@ -830,9 +759,7 @@ technologies = {
 		mot_anti_air_brigade = {
 			air_attack = 0.1
 		}
-		category_self_propelled_anti_air = {
-			air_attack = 0.1
-		}
+
 		enable_equipment_modules = {
 			tank_heavy_cannon_2
 		}
@@ -855,19 +782,6 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				OR = {
-					tag = JAP
-					tag = ENG
-					tag = USA
-				}
-				OR = {
-					has_war_with = JAP
-					has_war_with = USA
-					has_war_with = ENG
-				}
-				factor = 5
-			}
 		}
 
 		categories = {
@@ -889,9 +803,6 @@ technologies = {
 		mot_anti_air_brigade = {
 			air_attack = 0.1
 		}
-		category_self_propelled_anti_air = {
-			air_attack = 0.05
-		}
 
 		tech_air_damage_factor = -0.02
 
@@ -911,19 +822,6 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				OR = {
-					tag = JAP
-					tag = ENG
-					tag = USA
-				}
-				OR = {
-					has_war_with = JAP
-					has_war_with = USA
-					has_war_with = ENG
-				}
-				factor = 5
-			}
 		}
 
 		categories = {
@@ -939,9 +837,7 @@ technologies = {
 		enable_equipments = {
 			anti_air_equipment_3
 		}
-		armored_car = {
-			hard_attack = 0.1
-		}
+
 		static_anti_air_damage_factor = 0.1
 
 		enable_equipment_modules = {
@@ -963,19 +859,6 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				OR = {
-					tag = JAP
-					tag = ENG
-					tag = USA
-				}
-				OR = {
-					has_war_with = JAP
-					has_war_with = USA
-					has_war_with = ENG
-				}
-				factor = 5
-			}
 		}
 
 		categories = {
@@ -991,9 +874,7 @@ technologies = {
 		enable_equipments = {
 			anti_tank_equipment_1
 		}
-		armored_car = {
-			ap_attack = 0.1
-		}		
+		
 		enable_equipment_modules = {
 			tank_high_velocity_cannon
 			tank_heavy_cannon
@@ -1018,29 +899,6 @@ technologies = {
 		ai_will_do = {
 			base = 1
 
-			modifier = {
-				factor = 0.2
-
-				OR = {
-					tag = CHI
-					tag = PRC
-					tag = XSM
-					tag = SIK
-					tag = GXC
-					tag = SHX
-					tag = YUN
-				}
-			}
-			modifier = {
-				tag = JAP
-				not = {
-					OR = {
-						has_war_with = SOV
-						has_war_with = USA
-					}
-				}
-				factor = 0.5
-			}
 			modifier = { #This is needed for a lot of tank designs
 				factor = 4.0
 				is_major = yes
@@ -1082,13 +940,21 @@ technologies = {
 
 	antitank1 = {
 
-		category_anti_tank = {
-			hard_attack = 0.1
+		category_tank_destroyers = {
+			hard_attack = 0.15
 			ap_attack = 0.2
 		}
 
-		category_tank_destroyers = {
-			hard_attack = 0.15
+		anti_tank = {
+			hard_attack = 0.1
+			ap_attack = 0.2
+		}
+		anti_tank_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.2
+		}
+		mot_anti_tank_brigade = {
+			hard_attack = 0.1
 			ap_attack = 0.2
 		}
 
@@ -1124,16 +990,6 @@ technologies = {
 				}
 			}
 			modifier = {
-				tag = JAP
-				not = {
-					OR = {
-						has_War_with = SOV
-						has_war_with = USA
-					}
-				}
-				factor = 0.5
-			}
-			modifier = {
 				factor = 2
 				date > "1939.1.6"
 			}
@@ -1158,9 +1014,7 @@ technologies = {
 			hard_attack = 0.1
 			ap_attack = 0.1
 		}
-		armored_car = {
-			ap_attack = 0.1
-		}	
+
 		enable_equipments = {
 			anti_tank_equipment_2
 		}
@@ -1190,23 +1044,8 @@ technologies = {
 				date > "1939.1.9"
 			}
 			modifier = {
-				tag = JAP
-				not = {
-					OR = {
-						has_War_with = SOV
-						has_war_with = USA
-					}
-				}
-				factor = 0.5
-			}
-			modifier = {
 				factor = 2
 				date > "1940.1.1"
-			}
-			modifier = {
-				tag = USA
-				has_War = no
-				factor = 0.5 #this tank nonsense will never catch on
 			}
 			modifier = {
 				factor = 5
@@ -1237,12 +1076,18 @@ technologies = {
 		enable_equipment_modules = {
 			tank_medium_cannon_2
 		}
-		
-		category_anti_tank = {
+		anti_tank = {
 			hard_attack = 0.1
 			ap_attack = 0.1
 		}
-
+		anti_tank_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
+		mot_anti_tank_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
 		category_tank_destroyers = {
 			hard_attack = 0.1
 			ap_attack = 0.05
@@ -1278,16 +1123,6 @@ technologies = {
 				date > "1941.1.6"
 			}
 			modifier = {
-				tag = JAP
-				not = {
-					OR = {
-						has_War_with = SOV
-						has_war_with = USA
-					}
-				}
-				factor = 0.5
-			}
-			modifier = {
 				factor = 2
 				date > "1942.1.1"
 			}
@@ -1314,12 +1149,18 @@ technologies = {
 		enable_equipment_modules = {
 			tank_high_velocity_cannon_2
 		}
-		
-		category_anti_tank = {
+		anti_tank = {
 			hard_attack = 0.1
 			ap_attack = 0.1
 		}
-
+		anti_tank_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
+		mot_anti_tank_brigade = {
+			hard_attack = 0.05
+			ap_attack = 0.1
+		}
 		category_tank_destroyers = {
 			hard_attack = 0.05
 			ap_attack = 0.05
@@ -1345,16 +1186,6 @@ technologies = {
 			modifier = {
 				factor = 2
 				date > "1942.1.6"
-			}
-			modifier = {
-				tag = JAP
-				not = {
-					OR = {
-						has_War_with = SOV
-						has_war_with = USA
-					}
-				}
-				factor = 0.5
 			}
 			modifier = {
 				factor = 5
@@ -1386,9 +1217,7 @@ technologies = {
 		enable_equipments = {
 			anti_tank_equipment_3
 		}
-		armored_car = {
-			ap_attack = 0.1
-		}	
+
 		enable_equipment_modules = {
 			tank_high_velocity_cannon_3
 			tank_heavy_cannon_3
@@ -1411,16 +1240,6 @@ technologies = {
 			modifier = {
 				factor = 2
 				date > "1942.1.9"
-			}
-			modifier = {
-				tag = JAP
-				not = {
-					OR = {
-						has_War_with = SOV
-						has_war_with = USA
-					}
-				}
-				factor = 0.5
 			}
 			modifier = {
 				factor = 2
@@ -1529,7 +1348,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1940
+		start_year = 1940 #TODO_Manu: Adjust if necessary
 
 		folder = {
 			name = artillery_folder
@@ -1583,7 +1402,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1940
+		start_year = 1940 #TODO_Manu: Adjust if necessary
 
 		folder = {
 			name = artillery_folder
@@ -1622,7 +1441,7 @@ technologies = {
 			}
 		}
 
-		static_anti_air_damage_factor = 0.15
+		static_anti_air_damage_factor = 0.15 #Remember to adjust sp_naval_proximity_fuze_custom_tt when changing value
 		static_anti_air_hit_chance_factor = 0.3 
 
 		path = {

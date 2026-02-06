@@ -12,11 +12,6 @@ set_convoys = 0
 add_ideas = {
     #laws
 
-    temp_var:STR_Sotark
-    temp_var:STR_Oplot
-    temp_var:STR_Makswell
-    temp_var:STR_Barmaley
-
     #other ideas
     STR_devastated_front
     STR_revolution
@@ -55,6 +50,7 @@ set_politics = {
     elections_allowed = yes
 }
 
+recruit_character = STR_Trydovya_Rada
 recruit_character = STR_Sotark
 recruit_character = STR_Oplot
 recruit_character = STR_Makswell

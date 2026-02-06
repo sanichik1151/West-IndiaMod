@@ -59,6 +59,8 @@ set_politics = {
 
 recruit_character = AVS_Austrolfo
 
+create_faction = saso
+
 
 
 

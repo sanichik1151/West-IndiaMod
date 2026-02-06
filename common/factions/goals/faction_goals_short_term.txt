@@ -1,0 +1,44 @@
+faction_goal_rapid_industrialization = {
+	name = rapid_industrialization_goal_name
+	description = rapid_industrialization_goal_desc
+	category = short_term
+	group = FOCUS_FILTER_INDUSTRY
+	completed = {
+		num_of_military_factories > 15
+		num_of_civilian_factories > 20
+	}
+	complete_effect = {
+		add_faction_power_projection = 50
+		every_faction_member = {
+			add_political_power = 25
+			add_faction_initiative = 1
+		}
+	}
+	ai_will_do = {
+		base = 1
+	}
+}
+
+faction_goal_border_fortification = {
+	name = border_fortification_goal_name
+	description = border_fortification_goal_desc
+	category = short_term
+	group = FOCUS_FILTER_DEFENSE
+
+	completed = {
+		any_controlled_state = {
+			land_fort_level > 1
+		}
+	}
+
+	complete_effect = {
+		add_faction_power_projection = 30
+		every_faction_member = {
+			add_faction_initiative = 1
+		}
+	}
+
+	ai_will_do = {
+		base = 1
+	}
+}

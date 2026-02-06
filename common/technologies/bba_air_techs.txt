@@ -256,7 +256,6 @@ technologies = {
 				localization_key = SP_UNLOCK_PROJECT
 				PROJECT = sp_air_jet_engine	
 			}
-			
 		}				
 
 		research_cost = 2
@@ -286,12 +285,6 @@ technologies = {
 			modifier = {
 				factor = 4
 				is_major = yes
-			}
-
-			modifier = {
-				factor = 0
-				original_tag = GER
-				date < "1940.6.1"
 			}
 
 			modifier = {
@@ -439,10 +432,6 @@ technologies = {
 			factor = 1
 			modifier = {
 				is_major = yes
-				factor = 2
-			}
-			modifier = {
-				tag = GER
 				factor = 2
 			}
 		}
@@ -753,7 +742,6 @@ technologies = {
 			heavy_air
 			air_equipment
 			cat_strategic_bomber
-			cat_maritime_patrol
 			mio_cat_all_heavy_aircraft_and_modules
 		}
 		special_project_specialization = { specialization_air }
@@ -802,7 +790,6 @@ technologies = {
 			heavy_air
 			air_equipment
 			cat_strategic_bomber
-			cat_maritime_patrol
 			mio_cat_all_heavy_aircraft_and_modules
 		}
 		special_project_specialization = { specialization_air }
@@ -863,7 +850,6 @@ technologies = {
 			heavy_air
 			air_equipment
 			cat_strategic_bomber
-			cat_maritime_patrol
 			mio_cat_all_heavy_aircraft_and_modules
 		}
 		special_project_specialization = { specialization_air }
@@ -906,7 +892,6 @@ technologies = {
 			heavy_air
 			air_equipment
 			cat_strategic_bomber
-			cat_maritime_patrol
 			mio_cat_all_heavy_aircraft_and_modules
 		}
 		special_project_specialization = { specialization_air }
@@ -953,7 +938,6 @@ technologies = {
 			heavy_air
 			jet_technology
 			cat_strategic_bomber
-			cat_maritime_patrol
 			mio_cat_all_heavy_aircraft_and_modules
 		}
 		special_project_specialization = { specialization_air }
@@ -1164,7 +1148,6 @@ technologies = {
 			air_equipment
 			plane_modules_tech
 			cat_air_bombs
-			cat_maritime_patrol
 			mio_cat_all_naval_bomber_and_modules
 			mio_cat_all_medium_aircraft_and_modules
 			mio_cat_all_heavy_aircraft_and_modules
@@ -1207,7 +1190,6 @@ technologies = {
 			air_equipment
 			plane_modules_tech
 			cat_air_bombs
-			cat_maritime_patrol
 			mio_cat_all_naval_bomber_and_modules
 			mio_cat_all_medium_aircraft_and_modules
 			mio_cat_all_heavy_aircraft_and_modules
@@ -1245,7 +1227,6 @@ technologies = {
 			air_equipment
 			plane_modules_tech
 			cat_air_bombs
-			cat_maritime_patrol
 			mio_cat_all_naval_bomber_and_modules
 			mio_cat_all_medium_aircraft_and_modules
 			mio_cat_all_heavy_aircraft_and_modules
@@ -1410,13 +1391,6 @@ technologies = {
 				}
 				factor = 5
 			}
-			modifier = {
-				OR = {
-					tag = USA
-					tag = GER
-				}
-				factor = 3
-			}
 		}
 	}
 
@@ -1465,14 +1439,6 @@ technologies = {
 				}
 				factor = 5
 			}
-			modifier = {
-				OR = {
-					tag = GER
-					tag = SOV
-					tag = ENG
-				}
-				factor = 3
-			}
 		}
 	}
 
@@ -1514,14 +1480,6 @@ technologies = {
 				}
 				factor = 5
 			}
-			modifier = {
-				OR = {
-					tag = GER
-					tag = SOV
-					tag = ENG
-				}
-				factor = 3
-			}
 		}
 	}
 
@@ -1562,14 +1520,6 @@ technologies = {
 					has_tech = improved_large_airframe
 				}
 				factor = 5
-			}
-			modifier = {
-				OR = {
-					tag = GER
-					tag = SOV
-					tag = ENG
-				}
-				factor = 3
 			}
 		}
 	}
@@ -1895,13 +1845,6 @@ technologies = {
 			}
 			modifier = {
 				date > "1939.1.1"
-				factor = 3
-			}
-			modifier = {
-				OR = {
-					tag = USA
-					tag = JAP
-				}
 				factor = 3
 			}
 		}

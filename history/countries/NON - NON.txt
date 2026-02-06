@@ -11,7 +11,7 @@ set_convoys = 0
 
 add_ideas = {
     #laws
-    NON_void
+    # NON_void
     #other ideas
 }
 

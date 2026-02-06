@@ -32,10 +32,14 @@ set_technology = {
 
 set_popularities = {
     democratic = 0
-    communism = 0
-    fascism = 0
     neutrality = 100
-    classical_liberalism = 0
+    nationalism_ideology = 0
+    marxism_ideology = 0
+    fascism = 0
+    neutrality = 0
+    liberalism_ideology = 0
+    militarism = 0
+    libertarianism_ideology = 0
     zionism = 0
 }
 set_politics = {

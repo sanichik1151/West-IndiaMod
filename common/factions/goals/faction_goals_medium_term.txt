@@ -1,0 +1,64 @@
+faction_goal_high_seas_fleet = {
+	name = high_seas_fleet_goal_name
+	description = high_seas_fleet_goal_desc
+	category = medium_term
+	group = FOCUS_FILTER_NAVY_XP
+	visible = {
+		FROM = { num_of_naval_factories > 0 }
+	}
+	completed = {
+		count_in_collection = {
+			collection = {
+				input = game:scope
+				operators = { faction_members }
+				name = FACTION_FLEET_GOAL
+			}
+			unit = capital_ship
+			size > 15
+		}
+	}
+	complete_effect = {
+		add_faction_power_projection = 100
+		every_faction_member = {
+			limit = { num_of_naval_factories > 0 }
+			navy_experience = 50
+			add_faction_initiative = 1
+		}
+	}
+	ai_will_do = {
+		base = 1
+	}
+}
+
+faction_goal_resource_security = {
+	name = resource_security_goal_name
+	description = resource_security_goal_desc
+	category = medium_term
+	group = resources_to_market_icon
+	completed = {
+		has_resources_in_collection = {
+			collection = {
+				input = game:scope
+				operators = { faction_members }
+				name = FACTION_RESOURCES
+			}
+			resource = oil
+			amount > 100
+		}
+	}
+	complete_effect = {
+		add_faction_power_projection = 75
+		every_faction_member = {
+			add_faction_initiative = 1
+			add_tech_bonus = {
+				name = resource_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = excavation_tech
+			}
+		}
+	}
+	ai_will_do = {
+		base = 1
+	}
+}

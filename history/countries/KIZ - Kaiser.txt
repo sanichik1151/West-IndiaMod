@@ -51,12 +51,6 @@ set_politics = {
     elections_allowed = no
 }
 
-set_party_name = {
-    ideology = assadi_zionism
-    long_name = KIZ_assadi_zionism_long
-    name = KIZ_assadi_zionism_short
-}
-
 recruit_character = KIZ_Kaiser
 recruit_character = KIZ_Basar_Assad
 recruit_character = KIZ_Netanyahu
