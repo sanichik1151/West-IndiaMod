@@ -26,9 +26,8 @@ faction_goal_border_fortification = {
 	group = FOCUS_FILTER_DEFENSE
 
 	completed = {
-		any_controlled_state = {
-			land_fort_level > 1
-		}
+		num_of_controlled_states > 5
+
 	}
 
 	complete_effect = {

@@ -3,23 +3,11 @@ faction_goal_total_hegemony = {
 	description = total_hegemony_goal_desc
 	category = long_term
 	group = FOCUS_FILTER_ANNEXATION
+
 	completed = {
-		collection_size = {
-			input = {
-				input = game:all_countries
-				operators = {
-					limit = {
-						OR = {
-							is_in_faction_with = ROOT
-							is_subject_of = ROOT
-						}
-					}
-				}
-				name = HEGEMONY_LIST
-			}
-			value > 15
-		}
+		num_faction_members > 10
 	}
+
 	complete_effect = {
 		add_faction_power_projection = 300
 		every_faction_member = {
@@ -27,6 +15,7 @@ faction_goal_total_hegemony = {
 			add_stability = 0.1
 		}
 	}
+
 	ai_will_do = {
 		base = 1
 	}
@@ -37,27 +26,23 @@ faction_goal_global_arsenal = {
 	description = global_arsenal_goal_desc
 	category = long_term
 	group = FOCUS_FILTER_INDUSTRY
+
 	completed = {
-		count_in_collection = {
-			collection = {
-				input = game:scope
-				operators = { faction_members }
-				name = GLOBAL_INDUSTRY
-			}
-			num_of_military_factories > 300
-		}
+		num_of_military_factories > 150
 	}
+
 	complete_effect = {
 		add_faction_power_projection = 250
 		every_faction_member = {
 			add_tech_bonus = {
 				name = global_arsenal_bonus
-				bonus = 1.0
-				uses = 2
-				category = electronics
+				bonus = 0.5
+				uses = 1
+				category = industry
 			}
 		}
 	}
+
 	ai_will_do = {
 		base = 1
 	}
